@@ -18,7 +18,7 @@ header {
   margin-top: 25px;
 }
 footer {
-  background-color: lightgray;
+  margin-bottom: 40px;
 }
 
 .logo {
@@ -59,6 +59,13 @@ footer {
   margin-bottom: 40px;
   font-size: 50px;
   font-weight: bold;
+}
+.sub-title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #554485;
 }
 .description {
   margin: 0;
@@ -105,8 +112,16 @@ footer {
 }
 
 .socials {
+  display: flex;
+  gap: 24px;
 }
 .socials > .icon {
+  font-size: 24px;
+  color: #c5c5c5;
+  text-decoration: none;
+}
+.socials > .icon:hover {
+  color: red;
 }
 
 .copyright {
